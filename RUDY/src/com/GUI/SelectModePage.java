@@ -46,14 +46,16 @@ public class SelectModePage extends BgWindow {
 		selectEasy.setFont(new Font("Inter", Font.BOLD, 24));
 		selectEasy.setOpaque(true);
 		selectEasy.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 0));
-		selectEasy.setBackground(new Color(218, 255, 239));
+		selectEasy.setForeground(new Color(80, 139, 255));
+		selectEasy.setBackground(Color.white);
 		selectEasy.setPreferredSize(new Dimension(341, 62));
 
 		selectHard = new JRadioButton("   Hard");
 		selectHard.setFont(new Font("Inter", Font.BOLD, 24));
 		selectHard.setOpaque(true);
 		selectHard.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 0));
-		selectHard.setBackground(new Color(255, 237, 253));
+		selectHard.setForeground(new Color(80, 139, 255));
+		selectHard.setBackground(Color.white);
 		selectHard.setPreferredSize(new Dimension(341, 62));
 
 		ButtonGroup bg = new ButtonGroup();
@@ -91,11 +93,21 @@ public class SelectModePage extends BgWindow {
 				if (e.getSource() == selectEasy) {
 					System.out.println("select easy");
 					selectedMode = "Easy mode";
+					selectEasy.setForeground(Color.white);
+					selectEasy.setBackground(new Color(80, 139, 255));
+				} else {
+					selectEasy.setForeground(new Color(80, 139, 255));
+					selectEasy.setBackground(Color.white);
 				}
 				if (e.getSource() == selectHard) {
 
 					System.out.println("select hard");
 					selectedMode = "Hard mode";
+					selectHard.setForeground(Color.white);
+					selectHard.setBackground(new Color(80, 139, 255));
+				} else {
+					selectHard.setForeground(new Color(80, 139, 255));
+					selectHard.setBackground(Color.white);
 				}
 			}
 

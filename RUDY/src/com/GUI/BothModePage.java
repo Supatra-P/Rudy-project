@@ -37,14 +37,14 @@ public class BothModePage extends BgWindow implements ActionListener {
 	private JTextField inputSolution;
 
 	private String result = getRandomResult();
-	CleanButton resultCard = new CleanButton(result, new Color(218, 255, 239), Color.black);
+	CleanButton resultCard = new CleanButton(result, Color.white, new Color(80, 139, 255));
 
 	private ArrayList<String> randomNumberCards = getRandomNumber();
-	CleanButton cardNumber1 = new CleanButton(randomNumberCards.get(0), new Color(255, 254, 225), Color.black);
-	CleanButton cardNumber2 = new CleanButton(randomNumberCards.get(1), new Color(255, 254, 225), Color.black);
-	CleanButton cardNumber3 = new CleanButton(randomNumberCards.get(2), new Color(255, 254, 225), Color.black);
-	CleanButton cardNumber4 = new CleanButton(randomNumberCards.get(3), new Color(255, 254, 225), Color.black);
-	CleanButton cardNumber5 = new CleanButton(randomNumberCards.get(4), new Color(255, 254, 225), Color.black);
+	CleanButton cardNumber1 = new CleanButton(randomNumberCards.get(0), Color.white, new Color(80, 139, 255));
+	CleanButton cardNumber2 = new CleanButton(randomNumberCards.get(1), Color.white, new Color(80, 139, 255));
+	CleanButton cardNumber3 = new CleanButton(randomNumberCards.get(2), Color.white, new Color(80, 139, 255));
+	CleanButton cardNumber4 = new CleanButton(randomNumberCards.get(3), Color.white, new Color(80, 139, 255));
+	CleanButton cardNumber5 = new CleanButton(randomNumberCards.get(4), Color.white, new Color(80, 139, 255));
 
 	public BothModePage() {
 		super("RUDY: Select mode | " + mode);
